@@ -1,1 +1,32 @@
 /* Your CSS here. */
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #666666;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.profile-img {
+  height: 150px;
+  width: 150px;
+}
+
+.bio {
+  text-align: left;
+}
+
+.link {
+  font-weight: bold;
+}
