@@ -12,9 +12,10 @@ body {
 .card {
   background-color: #666666;
   color: white;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
-  max-width: 400px;
+  max-width: 750px;
+  height: 600px;
 }
 
 .profile-img {
@@ -28,4 +29,8 @@ body {
 
 .link {
   font-weight: bold;
+}
+
+.bio-start{
+  margin-top: 25px;
 }
