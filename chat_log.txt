@@ -1,0 +1,116 @@
+
+Claude finished the response
+
+Skip to content cs409-fa25 mp0 Repository navigation Code Issues Pull requests Agents Actions Projects Security and quality Insights mp0 Internal template Go to file t T carlguo2 carlguo2 npm audit fix dependabot issues 2f40bc7 · last week Name .github/workflows migrate webpack 4 to 5 last year
+
+pasted
+
+for this assign, generate a basic template which i can improvise on my own
+
+Created 2 files, ran a command, read a file
+Drop these into your src folder, replacing the existing index.html/style.css (or whatever they're named there), then swap in your own name, bio, photo URL, and link.
+
+A few notes tied to the MP0 rules:
+
+No inline styles — everything's in style.css.
+Image, heading, and link are centered via flexbox (align-items: center on .card); the bio text stays centered too, but I left a comment showing how to left-align it instead if you prefer.
+The image is set to exactly 150x150px as required.
+Swap the placeholder image URL for your own photo (or an image you add to src and reference locally).
+No JS, no tables, no external libraries — just plain HTML/CSS, so you're clear on the "no library" rule.
+Feel free to change colors, fonts, spacing, or add more elements — this is just a starting skeleton to build on.
+
+
+Index
+Code·HTML 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My MP0 Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <img
+      class="profile-pic"
+      src="https://via.placeholder.com/150"
+      alt="A photo of me"
+    />
+    <h1>Your Name</h1>
+    <p class="bio">
+      Write a couple sentences about yourself here — where you're from,
+      what you're studying, or anything you'd like to share. Replace this
+      placeholder text with your own bio.
+    </p>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      Visit my GitHub
+    </a>
+  </div>
+</body>
+</html>
+
+Style
+Code·CSS 
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+ 
+.card {
+  background-color: #4a90e2;
+  color: #ffffff;
+  width: 320px;
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontally centers image, heading, link */
+  text-align: center;  /* change to "left" if you'd rather left-align the bio */
+}
+ 
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin-bottom: 16px;
+}
+ 
+.card h1 {
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+}
+ 
+.card .bio {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+ 
+.card a {
+  color: #ffffff;
+  background-color: #357ab8;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ 
+.card a:hover {
+  background-color: #2b6396;
+}
+
+Write a message…
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
